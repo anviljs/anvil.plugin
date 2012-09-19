@@ -8,9 +8,10 @@ module.exports = function( _, anvil ) {
 			[ "enable [value]", "Enable plugin" ],
 			[ "install [value]", "Install a plugin from npm" ],
 			[ "list", "List available plugins" ],
-			[ "uninstall [value]", "Uninstall plugin" ]
+			[ "uninstall [value]", "Uninstall plugin" ],
+			[ "update", "Update all installed plugins" ]
 		],
-		commands: [ "disable", "enable", "install", "list", "uninstall" ],
+		commands: [ "disable", "enable", "install", "list", "uninstall", "update" ],
 
 		configure: function( config, commander, done ) {
 			var self = this,
