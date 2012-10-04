@@ -25,7 +25,7 @@ module.exports = function( _, anvil ) {
 				command = commands.length === 0 ? undefined : commands[ 0 ];
 			if( command ) {
 				anvil.pluginManager[ command.command ]( command.value, function() {
-					anvil.events.raise( "all.stop", 0 );
+					anvil.raise( "all.stop", 0 );
 				} );
 			} else {
 				done();
